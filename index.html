@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Word Beater</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="Beater.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h2>WordBeater</h2>
+            <button id="startGame">Start</button>
+        </header>
+        <div class="container">
+            <div>
+                <p>Type the Given word within
+                    <span id="timeAlloted">5</span>
+                    <span>Seconds:</span>
+                </p>
+
+            </div>
+            <div id="current-word">River</div>
+
+            <form action="">
+                <input id="word-input" autofocus type="text" name="" placeholder="Start typing...">
+            </form>
+                <p id="message"></p>
+            <div class="TimeScore">
+                <p>Time Left:
+                    <span id="leftTime"></span>
+                </p>
+                <p>Score: <span id="score">1</span></p>
+            </div>
+            <div class="instruction">
+                <p class="first"> Instructions </p>
+                <p>Type each word in the given amount of seconds to score. To play again, just type the current word. Your score will reset</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background: #000;
+        font-weight: bold;
+    }
+.wrapper{
+    width: 100%;
+    background: #9ca4a5;
+}
+header{
+    background: #555b5c;
+    width: 100%;
+    height: 40px;
+    padding: 3%;
+}
+
+canvas { background: #eee; }
+
+.container{
+    width: 50%;
+    min-height: 60vh;
+    margin: auto;
+    text-align: center;
+    padding: 2%;
+}
+
+#timeAlloted{
+    color: green;
+    font-size: 1.2rem;
+}
+
+#word{
+    margin: 2%;
+    font-size: 1.7rem;
+}
+
+input{
+    min-height: 30px;
+    padding: 8px;
+    min-width: 250px;
+}
+
+.TimeScore{
+    display: flex;
+    border: 1px solid;
+}
+
+.TimeScore > *{
+    margin: 2% 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    margin: auto;
+    text-align: center;
+}
+
+.instruction{
+    border: 1px solid white;
+    padding: 2%;
+    text-justify: distribute;
+}
+
+.instruction .first{
+    color: black;
+    font-size: 1.5rem;
+}
+</style>
+</html>
